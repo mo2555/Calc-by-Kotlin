@@ -3,11 +3,13 @@ fun main(args:Array<String>) {
     var num2: Int = 0
     var op: String = ""
     var count = 1
+    
+    // Why using while loop here ?
     while (true) {
         try {
             if (count == 1) {
                 println("Enter Number 1 : ")
-                num1 = readLine()!!.toInt()
+                num1 = readLine()!!.toInt()  // What happen if input like that 151354546446456 ?
                 count = 2
             }
             if (count == 2) {
